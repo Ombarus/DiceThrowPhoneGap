@@ -31,7 +31,5 @@
     </platform>
     <plugin name="cordova-plugin-shortcuts-android" spec="^0.1.0" />
     <engine name="android" spec="^7.0.0" />
-	<preference name="android-targetSdkVersion" value="android-26"/>
-	<preference name="android-minSdkVersion" value="android-26"/>
-	<preference name="android-build-tool" value="android-26"/>
+	<preference name="phonegap-version" value="cli-8.0.0" />
 </widget>
