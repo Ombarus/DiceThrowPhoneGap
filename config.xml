@@ -31,4 +31,5 @@
     </platform>
     <plugin name="cordova-plugin-shortcuts-android" spec="^0.1.0" />
     <engine name="android" spec="^7.0.0" />
+	<preference name="android-targetSdkVersion" value="android-26"/>
 </widget>
