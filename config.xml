@@ -63,15 +63,7 @@
         <icon density="hdpi" src="res/icon/android/004-72.png" />
         <icon density="xhdpi" src="res/icon/android/007-96.png" />
 		
-		<splash src="res/screen/android/ombarusdev-logo2.png" density="land-hdpi"/>
-		<splash src="res/screen/android/ombarusdev-logo2.png" density="land-ldpi"/>
-		<splash src="res/screen/android/ombarusdev-logo2.png" density="land-mdpi"/>
-		<splash src="res/screen/android/ombarusdev-logo2.png" density="land-xhdpi"/>
-
-		<splash src="res/screen/android/ombarusdev-logo2.png" density="port-hdpi"/>
-		<splash src="res/screen/android/ombarusdev-logo2.png" density="port-ldpi"/>
-		<splash src="res/screen/android/ombarusdev-logo2.png" density="port-mdpi"/>
-		<splash src="res/screen/android/ombarusdev-logo2.png" density="port-xhdpi"/>
+        <preference name="SplashScreenDelay" value="0" />
     </platform>
     <plugin name="cordova-plugin-shortcuts-android" spec="^0.1.0" />
 	<plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
