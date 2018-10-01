@@ -54,14 +54,27 @@
         <icon src="res/icon/ios/icon-167.png" width="167" height="167" />
 		
 		<splash src="res/screen/ios/ombarusdev-logo2.png" />
+        <preference name="FadeSplashScreenDuration" value="0" />
+        <preference name="SplashScreenDelay" value="0" />
     </platform>
     <platform name="android">
         <icon density="ldpi" src="res/icon/android/004-36.png" />
         <icon density="mdpi" src="res/icon/android/004-48.png" />
         <icon density="hdpi" src="res/icon/android/004-72.png" />
         <icon density="xhdpi" src="res/icon/android/007-96.png" />
+		
+		<splash src="res/screen/android/ombarusdev-logo2.png" density="land-hdpi"/>
+		<splash src="res/screen/android/ombarusdev-logo2.png" density="land-ldpi"/>
+		<splash src="res/screen/android/ombarusdev-logo2.png" density="land-mdpi"/>
+		<splash src="res/screen/android/ombarusdev-logo2.png" density="land-xhdpi"/>
+
+		<splash src="res/screen/android/ombarusdev-logo2.png" density="port-hdpi"/>
+		<splash src="res/screen/android/ombarusdev-logo2.png" density="port-ldpi"/>
+		<splash src="res/screen/android/ombarusdev-logo2.png" density="port-mdpi"/>
+		<splash src="res/screen/android/ombarusdev-logo2.png" density="port-xhdpi"/>
     </platform>
     <plugin name="cordova-plugin-shortcuts-android" spec="^0.1.0" />
+	<plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
     <engine name="android" spec="^7.0.0" />
 	<preference name="phonegap-version" value="cli-8.0.0" />
 </widget>
