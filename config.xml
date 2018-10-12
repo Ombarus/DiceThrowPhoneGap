@@ -62,11 +62,10 @@
         <icon density="mdpi" src="res/icon/android/004-48.png" />
         <icon density="hdpi" src="res/icon/android/004-72.png" />
         <icon density="xhdpi" src="res/icon/android/007-96.png" />
-		
         <preference name="SplashScreenDelay" value="0" />
     </platform>
     <plugin name="cordova-plugin-shortcuts-android" spec="^0.1.0" />
 	<plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
-    <engine name="android" spec="^7.0.0" />
+    <engine name="android" spec="^7.1.1" />
 	<preference name="phonegap-version" value="cli-8.0.0" />
 </widget>
