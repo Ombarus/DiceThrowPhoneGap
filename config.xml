@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ombarus.dicedm" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ombarus.dicedmfree" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Dice DM</name>
     <description>
         A fast, simple, practical dice throwing app for all.
@@ -53,6 +53,9 @@
         <!-- iPad Pro -->
         <icon src="res/icon/ios/icon-167.png" width="167" height="167" />
 		
+		<!-- marketing icon 1024 -->
+		<icon height="1024" width="1024" src="res/icon/ios/icon-1024.jpg" />
+		
 		<splash src="res/screen/ios/Default@2x~universal~anyany.png" />
         <preference name="FadeSplashScreenDuration" value="0" />
         <preference name="SplashScreenDelay" value="0" />
@@ -62,11 +65,23 @@
         <icon density="mdpi" src="res/icon/android/004-48.png" />
         <icon density="hdpi" src="res/icon/android/004-72.png" />
         <icon density="xhdpi" src="res/icon/android/007-96.png" />
-		
         <preference name="SplashScreenDelay" value="0" />
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/uses-permission" xmlns:android="http://schemas.android.com/apk/res/android">
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        </edit-config>
     </platform>
     <plugin name="cordova-plugin-shortcuts-android" spec="^0.1.0" />
-	<plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
-    <engine name="android" spec="^7.0.0" />
+    <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
+    <plugin name="cordova-admob-sdk" spec="~0.20.0">
+        <variable name="PLAY_SERVICES_VERSION" value="+" />
+    </plugin>
+    <plugin name="cordova-plugin-admob-free" spec="0.21.0">
+        <variable name="ADMOB_APP_ID" value="ca-app-pub-8275293921068244~7115335512" />
+    </plugin>
+    <plugin name="cordova-plugin-screen-orientation" spec="3.0.1" />
+    <plugin name="cc.fovea.cordova.purchase" spec="^7.2.0">
+        <variable name="BILLING_KEY" value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxHPPHJbUfn4am8fNEyrEY1Q5RGohwrjYQU8mKgAdAdoBI3huEEW9UnIs5DnIdIvCZIIM7pJEQbpHoeXeV26s08FPv7Hqh/FJ6SD2xcnjAWt4mAmeWLuLhAEdv4rT048GZJh9A3Jv0cG5lPWhrFuYjw5kxbAKiAv+xF34nsaoB4Pugc23CFHNs4kb4Wgn+lAs1/tqJAnz5426PfDZsjjRA8xXRAyGXwYMsU40uS9Z9Z7w90W4JilUE/P2A98AQbvNmTbQKkB6tJheVJz+IGT+7v5NgfNV205VRnnmY6vu6xz1SpQArwbNiBY/p70/o+2WDqVoNhbmQ61h8KGCdz7IEQIDAQAB" />
+    </plugin>
+    <engine name="android" spec="^7.1.1" />
 	<preference name="phonegap-version" value="cli-8.0.0" />
 </widget>
